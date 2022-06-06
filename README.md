@@ -1,7 +1,7 @@
 # gwas_eqtl
 
 
-This repository containts scripts used for the analyses in the article "Limited overlap of eQTLs and GWAS hits due to systematic differences in discovery".
+This repository contains scripts used for the analyses in the article "Limited overlap of eQTLs and GWAS hits due to systematic differences in discovery".
 
 - gwas_process: scripts in this directory download GWAS sum stats from the Neale lab website, and extract and LD clump the GWAS hits per trait
 

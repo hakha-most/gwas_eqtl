@@ -4,7 +4,7 @@ iter=$SLURM_ARRAY_TASK_ID #performed for each study
 
 codedir="extended_eqtl_analyses/eqtlcatalouge"
 outdirs="extended_eqtl_analyses/eqtlcatalouge"
-datadir="supp_note_data/eqtl_catalogue/data_download" #data on Zenodo, downloaded from https://www.ebi.ac.uk/eqtl/
+datadir="eqtl_catalogue_data_download" #data on Zenodo, downloaded from https://www.ebi.ac.uk/eqtl/
 
 liftover="liftOver" #link to software
 changefile="hg38ToHg19.over.chain.gz" #link to chain file used in liftOver

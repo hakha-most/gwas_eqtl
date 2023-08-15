@@ -1,0 +1,123 @@
+id	Domain	ChapterLevel	uniqTrait	no_rep_phenos	no_rep_disease	no_rep_disease_disorder	indep_phenos	indep_disease	indep_disease_disorder	cat
+3272	Cognitive	Mental Functions	Handedness	1	0	0	1	0	0	Cognitive
+3303	Psychiatric	Mental Functions	Able to confide	1	0	0	1	0	0	Cognitive
+3361	Neurological	Sensory Functions and Pain	Neck/shoulder pain for 3+ months	1	0	0	1	0	0	Cognitive
+3374	Neurological	Sensory Functions and Pain	Headaches for 3+ months	1	0	0	1	0	0	Cognitive
+3415	Cognitive	Mental Functions	Reaction time	1	0	0	1	0	0	Cognitive
+3418	Cognitive	Mental Functions	Fluid intelligence test - Number of fluid intelligence questions attempted within time limit	1	0	0	1	0	0	Cognitive
+3432	Cognitive	Mental Functions	Symbol digit substitution test - Number of symbol digit matches attempted	1	0	0	1	0	0	Cognitive
+3434	Cognitive	Mental Functions	Numeric memory test - Maximum digits remembered correctly	1	0	0	1	0	0	Cognitive
+3570	Neurological	Sensory Functions and Pain	Headache	1	0	0	1	0	0	Cognitive
+3748	Psychiatric	Mental Functions	Felt loved as child	1	0	0	1	0	0	Cognitive
+3779	Psychiatric	Mental Functions	Witnessed sudden violent death	1	0	0	1	0	0	Cognitive
+3789	Psychiatric	Mental Functions	Chronotype	0	0	0	1	0	0	Cognitive
+3792	Psychiatric	Mental Functions	Nap	0	0	0	1	0	0	Cognitive
+3793	Psychiatric	Mental Functions	Sleep duration	0	0	0	1	0	0	Cognitive
+3794	Psychiatric	Mental Functions	Snoring	0	0	0	1	0	0	Cognitive
+3795	Psychiatric	Mental Functions	Neuroticism	0	0	0	1	0	0	Cognitive
+4066	Environment	Major Life Areas	Educational attainment	1	0	0	1	0	0	Cognitive
+63	Reproduction	Genitourinary and Reproductive Functions	Age at menarche	1	0	0	1	0	0	Reproduction
+3346	Reproduction	Genitourinary and Reproductive Functions	Ever taken oral contraceptive pill	1	0	0	1	0	0	Reproduction
+3347	Reproduction	Genitourinary and Reproductive Functions	Age started oral contraceptive pill	1	0	0	1	0	0	Reproduction
+3348	Reproduction	Genitourinary and Reproductive Functions	Age when last used oral contraceptive pill	1	0	0	1	0	0	Reproduction
+3364	Reproduction	Genitourinary and Reproductive Functions	Age last used hormone-replacement therapy (HRT)	1	0	0	1	0	0	Reproduction
+3366	Reproduction	Genitourinary and Reproductive Functions	Age at menopause	1	0	0	1	0	0	Reproduction
+3414	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Birth weight	1	0	0	1	0	0	Reproduction
+4071	Reproduction	Genitourinary and Reproductive Functions	Number of sexual partners	1	0	0	1	0	0	Reproduction
+71	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	High-density lipoprotein cholesterol	1	0	0	1	0	0	Metabolic
+72	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Triglycerides	1	0	0	1	0	0	Metabolic
+73	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Total cholesterol	1	0	0	1	0	0	Metabolic
+193	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Estimated glomerular filtration rate based on serum creatinine	0	0	0	1	0	0	Metabolic
+197	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Urinary albumin-to-creatinine ratio	1	0	0	1	0	0	Metabolic
+206	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Serum Urate	1	0	0	1	0	0	Metabolic
+1156	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Fasting glucose	0	0	0	1	0	0	Metabolic
+3318	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Weight change	1	0	0	1	0	0	Metabolic
+3943	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	HbA1c	1	0	0	1	0	0	Metabolic
+3981	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	25-Hydroxyvitamin D level	1	0	0	1	0	0	Metabolic
+4074	Metabolic	Functions of the Digestive, Metabolic and Endocrine Systems	Body Mass Index	1	0	0	1	0	0	Metabolic
+3187	Skeletal	Structures Related to Movement	Height	0	0	0	1	0	0	Physical
+3330	Body Structures	Injury, Poisoning and Certain Other Consequences of External Causes	Fractured/broken bones in last 5 years	1	0	0	1	0	0	Physical
+3544	Body Structures	Structure Involved in Voice and Speech	Mouth ulcers	1	0	0	1	0	0	Physical
+3547	Body Structures	Structure Involved in Voice and Speech	Loose teeth	1	0	0	1	0	0	Physical
+3549	Body Structures	Structure Involved in Voice and Speech	Dentures	1	0	0	1	0	0	Physical
+3682	Skeletal	Sensory Functions and Pain	Abdominal and pelvic pain	1	0	0	1	0	0	Physical
+3979	Skeletal	Structures Related to Movement	Bone mineral density	1	0	0	1	0	0	Physical
+3869	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Basophil count	1	0	0	1	0	0	Immunological
+3873	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Sum eosinophil basophil count	1	0	0	1	0	0	Immunological
+3877	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Granulocyte count	1	0	0	1	0	0	Immunological
+3878	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Granulocyte percentage of myeloid white cells	1	0	0	1	0	0	Immunological
+3880	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Hemoglobin concentration	1	0	0	1	0	0	Immunological
+3881	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	High light scatter percentage of red cells	1	0	0	1	0	0	Immunological
+3884	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Lymphocyte count	1	0	0	1	0	0	Immunological
+3886	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Mean corpuscular hemoglobin concentration	1	0	0	1	0	0	Immunological
+3888	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Mean corpuscular volume	1	0	0	1	0	0	Immunological
+3889	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Monocyte count	1	0	0	1	0	0	Immunological
+3891	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Mean platelet volume	1	0	0	1	0	0	Immunological
+3898	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Platelet distribution width	0	0	0	1	0	0	Immunological
+3899	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Platelet count	1	0	0	1	0	0	Immunological
+3901	Immunological	Functions of the Cardiovascular, Haematological, Immunological and Respiratory Systems	Red cell distribution width	1	0	0	1	0	0	Immunological
+120	Metabolic	Endocrine, Nutritional and Metabolic Diseases	Obesity	1	1	1	0	1	1	Disease
+195	Metabolic	Diseases of the Genitourinary System	Chronic kidney disease	0	0	0	0	1	1	Disease
+1203	Connective Tissue	Diseases of the Musculoskeletal System and Connective Tissue	Rheumatoid Arthritis	1	1	1	1	1	1	Disease
+2031	Gastrointestinal	Diseases of the Digestive System	Inflammatory Bowel Disease	1	1	1	1	1	1	Disease
+3311	Ophthalmological	Diseases of the Eye and Adnexa	Other eye problems	1	1	1	1	1	1	Disease
+3324	Reproduction	Endocrine, Nutritional and Metabolic Diseases	Relative age of first facial hair	1	1	1	0	1	1	Disease
+3553	Respiratory	Disease of the Respiratory System	Hayfever, allergic rhinitis or eczema	1	1	1	1	1	1	Disease
+3597	Cardiovascular	Diseases of the Circulatory System	Hypertension	1	1	1	0	1	1	Disease
+3602	Endocrine	Endocrine, Nutritional and Metabolic Diseases	Hypothyroidism/Myxoedema	1	1	1	1	1	1	Disease
+3603	Neurological	Diseases of the Nervous System	Migraine	1	1	1	0	1	1	Disease
+3607	Skeletal	Diseases of the Musculoskeletal System and Connective Tissue	Osteoarthritis	0	0	0	1	1	1	Disease
+3667	Ophthalmological	Diseases of the Eye and Adnexa	Other cataract	1	1	1	1	1	1	Disease
+3668	Cardiovascular	Diseases of the Circulatory System	Chronic ischemic heart disease	1	1	1	1	1	1	Disease
+3671	Gastrointestinal	Diseases of the Digestive System	Inguinal hernia	1	1	1	1	1	1	Disease
+3673	Gastrointestinal	Diseases of the Digestive System	Diverticular disease of intestine	1	1	1	1	1	1	Disease
+3675	Gastrointestinal	Diseases of the Digestive System	Cholelithiasis	1	1	1	1	1	1	Disease
+3678	Skeletal	Diseases of the Musculoskeletal System and Connective Tissue	Internal derangement of knee	1	1	1	1	1	1	Disease
+3694	Cardiovascular	Diseases of the Circulatory System	Atrial fibrillation and flutter	1	1	1	1	1	1	Disease
+3698	Gastrointestinal	Diseases of the Digestive System	Diaphragmatic hernia	1	1	1	1	1	1	Disease
+3711	Mortality	Persons with Potential Health Hazards Related to Family and Personal History and Certain Conditions Influencing Health Status	Personal history of certain other diseases	1	1	1	0	1	0	Disease
+3786	Neurological	Diseases of the Nervous System	Insomnia	0	0	0	1	1	1	Disease
+4010	Neurological	Diseases of the Nervous System	Amyotrophic lateral sclerosis	0	0	0	1	1	1	Disease
+4085	Endocrine	Endocrine, Nutritional and Metabolic Diseases	Type 2 Diabetes	1	1	1	0	1	1	Disease
+4094	Neurological	Diseases of the Nervous System	Alzheimer disease	1	1	1	1	1	1	Disease
+2	Psychiatric	Mental and Behavioural Disorders	Attention deficit hyperactivity disorder	1	0	1	1	0	1	Disease, Disorder
+120	Metabolic	Endocrine, Nutritional and Metabolic Diseases	Obesity	1	1	1	0	1	1	Disease, Disorder
+195	Metabolic	Diseases of the Genitourinary System	Chronic kidney disease	0	0	0	0	1	1	Disease, Disorder
+1203	Connective Tissue	Diseases of the Musculoskeletal System and Connective Tissue	Rheumatoid Arthritis	1	1	1	1	1	1	Disease, Disorder
+2031	Gastrointestinal	Diseases of the Digestive System	Inflammatory Bowel Disease	1	1	1	1	1	1	Disease, Disorder
+3261	Psychiatric	Mental and Behavioural Disorders	Alcohol intake frequency	1	0	1	1	0	1	Disease, Disorder
+3264	Psychiatric	Mental and Behavioural Disorders	Beer/cider intake	1	0	1	1	0	1	Disease, Disorder
+3311	Ophthalmological	Diseases of the Eye and Adnexa	Other eye problems	1	1	1	1	1	1	Disease, Disorder
+3324	Reproduction	Endocrine, Nutritional and Metabolic Diseases	Relative age of first facial hair	1	1	1	0	1	1	Disease, Disorder
+3353	Psychiatric	Mental and Behavioural Disorders	Cigarettes per day	0	0	0	1	0	1	Disease, Disorder
+3354	Psychiatric	Mental and Behavioural Disorders	Age stopped smoking	1	0	1	1	0	1	Disease, Disorder
+3355	Psychiatric	Mental and Behavioural Disorders	Ever stopped smoking for 6+ months	1	0	1	1	0	1	Disease, Disorder
+3356	Psychiatric	Mental and Behavioural Disorders	Number of unsuccessful stop-smoking attempts	1	0	1	1	0	1	Disease, Disorder
+3391	Psychiatric	Mental and Behavioural Disorders	Ever depressed for a whole week	1	0	1	1	0	1	Disease, Disorder
+3510	Psychiatric	Mental and Behavioural Disorders	Reason for reducing amount of alcohol drunk: Health precaution	1	0	1	1	0	1	Disease, Disorder
+3553	Respiratory	Disease of the Respiratory System	Hayfever, allergic rhinitis or eczema	1	1	1	1	1	1	Disease, Disorder
+3597	Cardiovascular	Diseases of the Circulatory System	Hypertension	1	1	1	0	1	1	Disease, Disorder
+3602	Endocrine	Endocrine, Nutritional and Metabolic Diseases	Hypothyroidism/Myxoedema	1	1	1	1	1	1	Disease, Disorder
+3603	Neurological	Diseases of the Nervous System	Migraine	1	1	1	0	1	1	Disease, Disorder
+3607	Skeletal	Diseases of the Musculoskeletal System and Connective Tissue	Osteoarthritis	0	0	0	1	1	1	Disease, Disorder
+3657	Psychiatric	Mental and Behavioural Disorders	Former vs current drinkers	1	0	1	1	0	1	Disease, Disorder
+3667	Ophthalmological	Diseases of the Eye and Adnexa	Other cataract	1	1	1	1	1	1	Disease, Disorder
+3668	Cardiovascular	Diseases of the Circulatory System	Chronic ischemic heart disease	1	1	1	1	1	1	Disease, Disorder
+3671	Gastrointestinal	Diseases of the Digestive System	Inguinal hernia	1	1	1	1	1	1	Disease, Disorder
+3673	Gastrointestinal	Diseases of the Digestive System	Diverticular disease of intestine	1	1	1	1	1	1	Disease, Disorder
+3675	Gastrointestinal	Diseases of the Digestive System	Cholelithiasis	1	1	1	1	1	1	Disease, Disorder
+3678	Skeletal	Diseases of the Musculoskeletal System and Connective Tissue	Internal derangement of knee	1	1	1	1	1	1	Disease, Disorder
+3694	Cardiovascular	Diseases of the Circulatory System	Atrial fibrillation and flutter	1	1	1	1	1	1	Disease, Disorder
+3698	Gastrointestinal	Diseases of the Digestive System	Diaphragmatic hernia	1	1	1	1	1	1	Disease, Disorder
+3719	Psychiatric	Mental and Behavioural Disorders	Ever had known person concerned about, or recommended reduction of alcohol consumption	1	0	1	1	0	1	Disease, Disorder
+3744	Psychiatric	Mental and Behavioural Disorders	Ever taken cannabis	1	0	1	1	0	1	Disease, Disorder
+3772	Psychiatric	Mental and Behavioural Disorders	Recent feelings of tiredness or low enery	1	0	1	0	0	1	Disease, Disorder
+3786	Neurological	Diseases of the Nervous System	Insomnia	0	0	0	1	1	1	Disease, Disorder
+3982	Psychiatric	Mental and Behavioural Disorders	Schizophrenia	1	0	1	1	0	1	Disease, Disorder
+4010	Neurological	Diseases of the Nervous System	Amyotrophic lateral sclerosis	0	0	0	1	1	1	Disease, Disorder
+4011	Psychiatric	Mental and Behavioural Disorders	Depression	0	0	0	1	0	1	Disease, Disorder
+4012	Psychiatric	Mental and Behavioural Disorders	Probable major depressive disorder	1	0	1	1	0	1	Disease, Disorder
+4069	Psychiatric	Mental and Behavioural Disorders	Alcohol intake	0	0	0	1	0	1	Disease, Disorder
+4070	Psychiatric	Mental and Behavioural Disorders	Ever vs never smokers	1	0	1	1	0	1	Disease, Disorder
+4085	Endocrine	Endocrine, Nutritional and Metabolic Diseases	Type 2 Diabetes	1	1	1	0	1	1	Disease, Disorder
+4094	Neurological	Diseases of the Nervous System	Alzheimer disease	1	1	1	1	1	1	Disease, Disorder

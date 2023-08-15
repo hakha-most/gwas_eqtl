@@ -1,6 +1,6 @@
 # Repository: gwas-eqtl
 
-This repository contains scripts used for the analyses in the article "Systematic differences in discovery of genetic effects on gene expression and complex traits" by Mostafavi et al.
+This repository contains scripts used for the analyses in the article "Systematic differences in discovery of genetic effects on gene expression and complex traits" by Mostafavi et al. Throughout, data files are used that are deposited on Zenodo with the DOI 10.5281/zenodo.6618073. Some files are zipped and need to be decompressed.
 
 ## Directories and Scripts
 
@@ -19,10 +19,6 @@ Scripts to compute a range of SNP and gene properties of GWAS hits.
 ### eqtl_props
 
 Scripts to compute a range of SNP and gene properties of eQTLs.
-
-### snp_annotations
-
-This directory contains various SNP-level annotations that are used by codes in other directories.
 
 ### gene_annotations
 

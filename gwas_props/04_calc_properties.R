@@ -10,10 +10,10 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="filter_indep_gwas.assoc" 
-infofile="snp_annots/filter_snps.txt"
-genefile="gene_annots/pc_genes.txt"
-outfile="gwas.basic_props"
+gwasfile="gwas_props/filter_indep_gwas.assoc" 
+infofile="snp_annotations/filter_snps.txt"
+genefile="gene_annotations/all_annots_pc_genes.txt"
+outfile="gwas_props/gwas.basic_props"
 
 d_info=fread(infofile) #SNP features
 d_gene=fread(genefile) #genic features
@@ -22,12 +22,12 @@ d_gene$gene=d_gene$hgnc_id
 #bin continuous genic features
 d_gene$LOEUF_cat=ntile(d_gene$LOEUF,5)
 d_gene$Road_length_cat=ntile(d_gene$Roadmap_length_per_type,5)
-d_gene$Road_count_cat=ntile(d_gene$Roadmap_count1,5)
+d_gene$Road_count_cat=ntile(d_gene$Roadmap_count,5)
 d_gene$ABC_length_cat=ntile(d_gene$ABC_length_per_type,5)
-d_gene$ABC_count_cat=ntile(d_gene$ABC_count1,5)
+d_gene$ABC_count_cat=ntile(d_gene$ABC_count,5)
 d_gene$TSS_cat=ntile(d_gene$promoter_count,5)
 
-d_all=left_join(d_info,d_gene,by="gene") #merge SNP and genic features
+d_all=left_join(d_info,(d_gene %>% select(-TSSD)),by="gene")
 d_all$d_tss_signed=(d_all$d_tss)
 d_all$d_tss=abs(d_all$d_tss)
 
@@ -102,8 +102,8 @@ d_all_norm$PPI_degree_decile=d_all_norm$PPI_degree_decile*1/1
 d_all_norm$TF=normalize_na_rm(d_all_norm$TF)
 d_all_norm$pLI=normalize_na_rm(d_all_norm$pLI)
 d_all_norm$Roadmap_length_per_type=normalize_na_rm(d_all_norm$Roadmap_length_per_type)
-d_all_norm$Roadmap_count1=normalize_na_rm(d_all_norm$Roadmap_count1)
-d_all_norm$ABC_count1=normalize_na_rm(d_all_norm$ABC_count1)
+d_all_norm$Roadmap_count=normalize_na_rm(d_all_norm$Roadmap_count)
+d_all_norm$ABC_count=normalize_na_rm(d_all_norm$ABC_count)
 d_all_norm$ABC_length_per_type=normalize_na_rm(d_all_norm$ABC_length_per_type)
 d_all_norm$promoter_count=normalize_na_rm(d_all_norm$promoter_count)
 d_all_norm[d_all_norm$connectedness==1,]$connect_decile=normalize_na_rm(d_all_norm[d_all_norm$connectedness==1,]$connect_decile)
@@ -124,7 +124,7 @@ d2$type=0
 dx=rbind(d1,d2)
 
 #joint model
-mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+TF+connectedness+connect_decile+Roadmap_count1+Roadmap_length_per_type+pLI+promoter_count+PPI_degree_cat+PPI_degree_decile,data=dx,family = "binomial")
+mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+TF+connectedness+connect_decile+Roadmap_count+Roadmap_length_per_type+pLI+promoter_count+PPI_degree_cat+PPI_degree_decile,data=dx,family = "binomial")
 
 #extract coeffs
 
@@ -158,11 +158,11 @@ promoter_count_coef_marginal=unname(summary(mod1)$coef[,1][base_count+1])
 mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+PPI_degree_decile,data=dx[dx$PPI_degree_cat==1,],family = "binomial")
 PPI_rank_coef_marginal=unname(summary(mod1)$coef[,1][base_count+1])
 
-mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+ABC_length_per_type+ABC_count1,data=dx,family = "binomial")
+mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+ABC_length_per_type+ABC_count,data=dx,family = "binomial")
 ABC_length_coef_count=unname(summary(mod1)$coef[,1][base_count+1])
 ABC_count_coef_length=unname(summary(mod1)$coef[,1][base_count+2])
 
-mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+Roadmap_length_per_type+Roadmap_count1,data=dx,family = "binomial")
+mod1=glm(type~d_tss+MAF+L2+TSSD+factor(TSSD_cat)+factor(d_tss_cat)+factor(MAF_cat)+factor(L2_cat)+length+CDS_length+Roadmap_length_per_type+Roadmap_count,data=dx,family = "binomial")
 Road_length_coef_count=unname(summary(mod1)$coef[,1][base_count+1])
 Road_count_coef_length=unname(summary(mod1)$coef[,1][base_count+2])
 

@@ -3,8 +3,8 @@
 
 args <- commandArgs(TRUE)
 snplist <- args[1] #list of SNP for which matches are found, i.e. all GWAS SNPs
-info_file="snp_annots/filter_snps.txt"
-outfile="gwas.match_snps.txt"
+info_file="snp_annotations/filter_snps.txt"
+outfile="gwas_props/gwas.match_snps.txt"
 
 #====
 

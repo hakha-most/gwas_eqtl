@@ -10,9 +10,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="filter_indep_gwas.assoc"
-infofile="snp_annots/filter_snps.txt"
-outfile="gwas.TSS_props"
+gwasfile="gwas_props/filter_indep_gwas.assoc"
+infofile="snp_annotations/filter_snps.txt"
+outfile="gwas_props/gwas.TSS_props"
 
 d_info=fread(infofile)
 

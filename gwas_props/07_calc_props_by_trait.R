@@ -10,11 +10,11 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="filter_indep_gwas.assoc" 
-infofile="snp_annots/filter_snps.txt"
-genefile="gene_annots/pc_genes.txt"
-outfile1="gwas.SNP_count.by_trait"
-outfile2="gwas.basic_props.by_trait"
+gwasfile="gwas_props/filter_indep_gwas.assoc" 
+infofile="snp_annotations/filter_snps.txt"
+genefile="gene_annotations/all_annots_pc_genes.txt"
+outfile1="gwas_props/gwas.SNP_count.by_trait"
+outfile2="gwas_props/gwas.basic_props.by_trait"
 
 d_info=fread(infofile)
 d_gene=fread(genefile)
@@ -22,9 +22,9 @@ d_gene$gene=d_gene$hgnc_id
 
 d_gene$LOEUF_cat=ntile(d_gene$LOEUF,5)
 d_gene$Road_length_cat=ntile(d_gene$Roadmap_length_per_type,5)
-d_gene$Road_count_cat=ntile(d_gene$Roadmap_count1,5)
+d_gene$Road_count_cat=ntile(d_gene$Roadmap_count,5)
 d_gene$ABC_length_cat=ntile(d_gene$ABC_length_per_type,5)
-d_gene$ABC_count_cat=ntile(d_gene$ABC_count1,5)
+d_gene$ABC_count_cat=ntile(d_gene$ABC_count,5)
 d_gene$TSS_cat=ntile(d_gene$promoter_count,5)
 
 d_gene$tRoad_length=d_gene$Road_length_cat; d_gene[d_gene$Road_length_cat==5,]$tRoad_length=1; d_gene[d_gene$Road_length_cat<5,]$tRoad_length=0
@@ -37,7 +37,7 @@ d_gene$tTSS=d_gene$TSS_cat; d_gene[d_gene$TSS_cat==5,]$tTSS=1; d_gene[d_gene$TSS
 d_gene$tconnect=d_gene$connect_quantile; d_gene[d_gene$connect_quantile>=4,]$tconnect=1; d_gene[d_gene$connect_quantile<4,]$tconnect=0
 d_gene$tPPI=d_gene$PPI_degree_quantile; d_gene[d_gene$PPI_degree_quantile==5,]$tPPI=1; d_gene[d_gene$PPI_degree_quantile<5,]$tPPI=0
 
-d_all=left_join(d_info,d_gene,by="gene")
+d_all=left_join(d_info,(d_gene %>% select(-TSSD)),by="gene")
 
 d_gwas=fread(gwasfile)
 d_gwas_annots=left_join(d_gwas,d_all,by="SNP")

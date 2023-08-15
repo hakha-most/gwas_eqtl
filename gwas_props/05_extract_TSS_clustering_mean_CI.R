@@ -7,9 +7,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="gwas.TSS_props"
-bootfile="gwas_boot.TSS_props" # same as "gwasfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
-gwasfile_match="gwas_matched.TSS_props" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
+gwasfile="gwas_props/gwas.TSS_props"
+bootfile="gwas_props/gwas_boot.TSS_props" # same as "gwasfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
+gwasfile_match="gwas_props/gwas_matched.TSS_props" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
 
 d_gwas=fread(gwasfile,sep=",",header=T)
 d_boot=fread(bootfile,sep=",",header=T)

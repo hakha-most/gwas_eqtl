@@ -7,9 +7,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="gwas.promoter_enhancer.enrichments"
-bootfile="gwas_boot.promoter_enhancer.enrichments" # same as "gwasfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
-gwasfile_match="gwas_matched.promoter_enhancer.enrichments" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
+gwasfile="gwas_props/gwas.promoter_enhancer.enrichments"
+bootfile="gwas_props/gwas_boot.promoter_enhancer.enrichments" # same as "gwasfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
+gwasfile_match="gwas_props/gwas_matched.promoter_enhancer.enrichments" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
 
 d_gwas=fread(gwasfile,sep=",")
 d_boot=fread(bootfile,sep=",")

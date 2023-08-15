@@ -10,9 +10,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="filter_indep_gwas.assoc"
-infofile="snp_annots/promoter_enhancer.counts"
-outfile="gwas.promoter_enhancer.enrichments"
+gwasfile="gwas_props/filter_indep_gwas.assoc"
+infofile="snp_annotations/promoter_enhancer.counts"
+outfile="gwas_props/gwas.promoter_enhancer.enrichments"
 
 d_info=fread(infofile)
 

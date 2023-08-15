@@ -1,12 +1,15 @@
 
 ## Script to filter and prune the trait list such that no pairs of traits have rho_g > 0.5.
 
-gwasfile="gwas_hits.all_phenos.clumped_sorted.txt"
-snpfile="snp_annots/filter_snps.txt"
-rg_file="ukb_neale_lab/rg.pairwise_min_0.5.txt"
-h2_file="ukb_neale_lab/h2.2Oct2019.tsv"
-phenos_file="ukb_neale_lab/phenos_list.txt"
-outfile="filter_indep_gwas.assoc"
+supp_data_dir="path to the supp data" # see Supplementary Data
+
+#file concatenating the output of codes in "gwas_process" across all traits
+gwasfile="gwas_props/gwas_hits.all_phenos.clumped_sorted.txt" 
+snpfile="snp_annotations/filter_snps.txt"
+rg_file=$supp_data_dir/"ukb_neale_lab/rg.pairwise_min_0.5.txt"
+h2_file=$supp_data_dir/"ukb_neale_lab/h2.2Oct2019.tsv"
+phenos_file=$supp_data_dir/"ukb_neale_lab/phenos_list.txt"
+outfile="gwas_props/filter_indep_gwas.assoc"
 
 library(tidyverse)
 library(data.table)

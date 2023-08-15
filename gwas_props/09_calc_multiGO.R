@@ -10,10 +10,10 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="filter_indep_gwas.assoc" 
-infofile="snp_annots/filter_snps.txt"
-genefile="gene_annots/genes_multiGO.txt"
-outfile="gwas.multiGO_props"
+gwasfile="gwas_props/filter_indep_gwas.assoc" 
+infofile="snp_annotations/filter_snps.txt"
+GO_file="gene_annotations/12_GO_annotations/genes_multiGO.txt"
+outfile="gwas_props/gwas.multiGO_props"
 
 d_info=fread(infofile)
 d_gene=fread(genefile)

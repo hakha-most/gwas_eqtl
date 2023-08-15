@@ -7,8 +7,8 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-gwasfile="gwas.GO_props_noTF.by_trait"
-gwasfile_match="gwas_matched.GO_props_noTF.by_trait" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
+gwasfile="gwas_props/gwas.GO_props_noTF.by_trait"
+gwasfile_match="gwas_props/gwas_matched.GO_props_noTF.by_trait" # same as "gwasfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
 
 d_gwas=fread(gwasfile,sep=",")
 d_gwas_match=fread(gwasfile_match,sep=",")

@@ -3,9 +3,9 @@
 
 args <- commandArgs(TRUE)
 iter <- args[1] #bootstrapping iteration; performed 1000 times
-gwasfile="filter_indep_gwas.assoc"
-blockfile="snp_annots/snps.LD_blocks.txt"
-outfile=paste0("boot_",as.character(iter),".txt")
+gwasfile="gwas_props/filter_indep_gwas.assoc"
+blockfile="snp_annotations/snps.LD_blocks.txt"
+outfile=paste0("gwas_props/boot_",as.character(iter),".txt")
 
 library(tidyverse)
 library(data.table)

@@ -4,7 +4,7 @@ iter=$1 #loop over trait index in a list of traits
 
 codedir="path to the directory of scripts"
 outdirs="path to the directory of output files" 
-trait_list=$supp_data_dir/"ukb_neale_lab/cat.phenos.txt" # categorical traits info in Neale lab data
+trait_list=$supp_data_dir/"ukb_neale_lab/cat.phenos.txt" # categorical traits info in Neale lab data (see Supp Data)
 outdir=$outdirs/"cat_"$iter # trait index
 
 mkdir -p $outdir

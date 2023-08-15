@@ -1,0 +1,15 @@
+pheno,trait
+30100_irnt,Mean platelet volume
+30040_irnt,Mean corpuscular volume
+30110_irnt,Platelet distribution width
+30090_irnt,Platelet crit
+30130_irnt,Monocyte count
+30210_irnt,Eosinophil percentage
+30070_irnt,Red blood cell distribution width
+30290_irnt,High light scatter reticulocyte percentage
+30120_irnt,Lymphocyte count
+30140_irnt,Neutrophil count
+30200_irnt,Neutrophil percentage
+1737_cat,Childhood sunburn occasions
+6152_100_cat,Blood clot; DVT; etc. not diagnosed
+1757_cat,Facial ageing

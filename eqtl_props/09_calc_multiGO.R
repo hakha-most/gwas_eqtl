@@ -10,10 +10,10 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-eqtlfile="filter_eqtls.pruned_tissues.assoc" 
-infofile="snp_annots/filter_snps.txt"
-genefile="gene_annots/genes_multiGO.txt"
-outfile="eqtl.multiGO_props"
+eqtlfile="eqtl_props/filter_eqtls.pruned_tissues.assoc" 
+infofile="snp_annotations/filter_snps.txt"
+GO_file="gene_annotations/12_GO_annotations/genes_multiGO.txt"
+outfile="eqtl_props/eqtl.multiGO_props"
 
 d_info=fread(infofile)
 d_gene=fread(genefile)

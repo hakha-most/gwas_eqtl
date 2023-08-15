@@ -10,11 +10,11 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-eqtlfile="filter_eqtls.pruned_tissues.assoc" 
-infofile="snp_annots/filter_snps.txt"
-genefile="gene_annots/pc_genes.txt"
-outfile1="eqtl.SNP_count.by_tissue"
-outfile2="eqtl.basic_props.by_tissue"
+eqtlfile="eqtl_props/filter_eqtls.pruned_tissues.assoc" 
+infofile="snp_annotations/filter_snps.txt"
+genefile="gene_annotations/all_annots_pc_genes.txt"
+outfile1="eqtl_props/eqtl.SNP_count.by_tissue"
+outfile2="eqtl_props/eqtl.basic_props.by_tissue"
 
 d_info=fread(infofile)
 d_gene=fread(genefile)
@@ -22,9 +22,9 @@ d_gene$gene=d_gene$hgnc_id
 
 d_gene$LOEUF_cat=ntile(d_gene$LOEUF,5)
 d_gene$Road_length_cat=ntile(d_gene$Roadmap_length_per_type,5)
-d_gene$Road_count_cat=ntile(d_gene$Roadmap_count1,5)
+d_gene$Road_count_cat=ntile(d_gene$Roadmap_count,5)
 d_gene$ABC_length_cat=ntile(d_gene$ABC_length_per_type,5)
-d_gene$ABC_count_cat=ntile(d_gene$ABC_count1,5)
+d_gene$ABC_count_cat=ntile(d_gene$ABC_count,5)
 d_gene$TSS_cat=ntile(d_gene$promoter_count,5)
 
 d_gene$tRoad_length=d_gene$Road_length_cat; d_gene[d_gene$Road_length_cat==5,]$tRoad_length=1; d_gene[d_gene$Road_length_cat<5,]$tRoad_length=0
@@ -37,7 +37,7 @@ d_gene$tTSS=d_gene$TSS_cat; d_gene[d_gene$TSS_cat==5,]$tTSS=1; d_gene[d_gene$TSS
 d_gene$tconnect=d_gene$connect_quantile; d_gene[d_gene$connect_quantile>=4,]$tconnect=1; d_gene[d_gene$connect_quantile<4,]$tconnect=0
 d_gene$tPPI=d_gene$PPI_degree_quantile; d_gene[d_gene$PPI_degree_quantile==5,]$tPPI=1; d_gene[d_gene$PPI_degree_quantile<5,]$tPPI=0
 
-d_all=left_join(d_info,d_gene,by="gene")
+d_all=left_join(d_info,(d_gene %>% select(-TSSD)),by="gene") #merge SNP and genic features
 
 d_eqtl=fread(eqtlfile)
 d_eqtl=d_eqtl[d_eqtl$Pval<(5e-8),] #restrict to top eQTLs using a p-value cutoff matching GWAS

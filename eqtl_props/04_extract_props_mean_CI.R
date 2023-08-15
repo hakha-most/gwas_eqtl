@@ -7,9 +7,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-eqtlfile="eqtl.basic_props"
-bootfile="eqtl_boot.basic_props" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
-eqtlfile_match="eqtl_matched.basic_props" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
+eqtlfile="eqtl_props/eqtl.basic_props"
+bootfile="eqtl_props/eqtl_boot.basic_props" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 bootstrapped samples
+eqtlfile_match="eqtl_props/eqtl_matched.basic_props" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
 
 d_eqtl=fread(eqtlfile,sep=",")
 d_boot=fread(bootfile,sep=",")

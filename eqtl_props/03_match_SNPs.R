@@ -3,8 +3,8 @@
 
 args <- commandArgs(TRUE)
 snplist <- args[1] #list of SNPs for which matches are found, i.e. all eQTL SNPs
-info_file="snp_annots/filter_snps.txt"
-outfile="eqtl.match_snps.txt"
+info_file="snp_annotations/filter_snps.txt"
+outfile="eqtl_props/eqtl.match_snps.txt"
 
 #====
 

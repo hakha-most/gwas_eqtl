@@ -7,8 +7,8 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-eqtlfile="eqtl.basic_props.by_tissue"
-eqtlfile_match="eqtl_matched.basic_props.by_tissue" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
+eqtlfile="eqtl_props/eqtl.basic_props.by_tissue"
+eqtlfile_match="eqtl_props/eqtl_matched.basic_props.by_tissue" # same as "eqtlfile", but computed and concatenated 1000 times for 1000 instances of matched SNPs
 
 d_eqtl=fread(eqtlfile,sep=",")
 d_eqtl_match=fread(eqtlfile_match,sep=",")

@@ -3,9 +3,9 @@
 
 args <- commandArgs(TRUE)
 iter <- args[1] #bootstrapping iteration; performed 1000 times
-eqtlfile="filter_eqtls.pruned_tissues.assoc"
-blockfile="snp_annots/snps.LD_blocks.txt"
-outfile=paste0("boot_",as.character(iter),".txt")
+eqtlfile="eqtl_props/filter_eqtls.pruned_tissues.assoc"
+blockfile="snp_annotations/snps.LD_blocks.txt"
+outfile=paste0("eqtl_props/boot_",as.character(iter),".txt")
 
 library(tidyverse)
 library(data.table)

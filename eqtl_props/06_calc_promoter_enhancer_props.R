@@ -10,9 +10,9 @@ library(data.table)
 library(tidyverse)
 library(dplyr)
 
-eqtlfile="filter_eqtls.pruned_tissues.assoc"
-infofile="snp_annots/promoter_enhancer.counts"
-outfile="eqtl.promoter_enhancer.enrichments"
+eqtlfile="eqtl_props/filter_eqtls.pruned_tissues.assoc"
+infofile="snp_annotations/promoter_enhancer.counts"
+outfile="eqtl_props/eqtl.promoter_enhancer.enrichments"
 
 d_info=fread(infofile)
 

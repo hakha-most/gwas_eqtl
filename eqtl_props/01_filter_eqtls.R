@@ -1,11 +1,12 @@
 
 ## Script to filter eQTLs and prune brain tissues
 
-eqtlfile="eqtls.all_tissues.clumped.txt"
-snpfile="snp_annots/filter_snps.txt"
-genefile="gene_annots/genes.protein_coding.v39.gtf"
-outfile1="filter_eqtls.all_tissues.assoc"
-outfile2="filter_eqtls.pruned_tissues.assoc"
+#file concatenating the output of codes in "eqtl_process" across all tissue-eGene pairs
+eqtlfile="eqtl_props/eqtls.all_tissues.clumped.txt"
+snpfile="snp_annotations/filter_snps.txt"
+genefile="gene_annotations/genes.protein_coding.v39.gtf"
+outfile1="eqtl_props/filter_eqtls.all_tissues.assoc"
+outfile2="eqtl_props/filter_eqtls.pruned_tissues.assoc"
 
 library(tidyverse)
 library(data.table)
